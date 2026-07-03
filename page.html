@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Information Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Course:</label>
+    <input type="text" id="course">
+
+    <br><br>
+
+    <label>Year of Study:</label>
+    <select id="year">
+        <option value="1">Year 1</option>
+        <option value="2">Year 2</option>
+        <option value="3">Year 3</option>
+        <option value="4">Year 4</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="displayInfo()">Submit</button>
+
+    <h3>Student Details</h3>
+    <p id="result"></p>
+
+    <script>
+        function displayInfo() {
+
+            var name = document.getElementById("name").value;
+            var course = document.getElementById("course").value;
+            var year = document.getElementById("year").value;
+
+            var message = "Name: " + name +
+                          "<br>Course: " + course +
+                          "<br>Year of Study: " + year;
+
+            if (year == 4) {
+                message = message +
+                "<br><br> Congratulations! You are in your final year. Keep working hard and finish strong!";
+            }
+
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

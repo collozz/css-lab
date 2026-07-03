@@ -1,0 +1,261 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ==========================
+   General Styling
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   Navigation Bar
+========================== */
+
+/* Navigation */
+
+nav{
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:18px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#ff4655;
+    color:white;
+}
+
+/* ==========================
+   Headings
+========================== */
+
+h1{
+    text-align:center;
+    color:#ff4655;
+    margin:30px 0 10px;
+}
+
+h2{
+    text-align:center;
+    color:#111827;
+    margin:20px 0;
+}
+
+h3{
+    color:#111827;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Paragraphs
+========================== */
+
+p{
+    text-align:center;
+    margin:15px;
+}
+
+/* ==========================
+   Hero Image
+========================== */
+
+.hero-image{
+    width:90%;
+    max-width:1000px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card{
+    background:white;
+    width:85%;
+    margin:25px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.card ul,
+.card ol{
+    margin-left:25px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+button,
+input[type=submit]{
+
+    background:#ff4655;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover,
+input[type=submit]:hover{
+
+    background:#d63a49;
+}
+
+/* ==========================
+   Table
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#ff4655;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#ffe5e8;
+}
+
+/* ==========================
+   Form
+========================== */
+/* ==========================
+   Form
+========================== */
+
+form{
+    background:white;
+    width:80%;
+    max-width:700px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=date],
+select,
+textarea{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:10px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    font-weight:normal;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    margin-right:6px;
+}
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav a{
+        margin:10px 0;
+    }
+
+    .card,
+    form{
+        width:95%;
+    }
+
+    .gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+}
